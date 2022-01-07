@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Page Layout</title>
+    <style>
+        header{
+            background-color:white;
+            padding:10px;
+            hight:80px;
+            
+        }
+        footer{
+            padding:20px;
+        }
+        #three{
+            padding:30px;
+        }
+        ul {
+            list-style-type: none;
+            margin:0;
+            padding: 0;
+            width: 100%;
+            background-color: black;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+            li a:hover {
+                background-color: silver;
+                color: black;
+            }
+    </style>
+</head>
+<body>
+    <table  width="100%" height="550px">
+        <tr>
+            <td width="20%">
+                <ul>
+                    <li><a href="#">Dashbord</a></li>
+                    <li><a href="#">Item</a></li>
+                    <li><a href="#">Bamking</a></li>
+                    <li><a href="#">Sales</a></li>
+                    <li><a href="#">Custmor</a></li>
+                    <li><a href="#">Retainer invoice</a></li>
+                    <li><a href="#">Invoice</a></li>
+                    <li><a href="#">Payments Recived</a></li>
+
+                    <li><a href="#">Purchases</a></li>
+                    <li><a href="#">Time Tracking</a></li>
+                    <li><a href="#">e-Way Bill</a></li>
+                    <li><a href="#">GST-Filling</a></li>
+                </ul>
+
+            </td>
+            <td width="80%">
+                <header ><input type="search" placeholder="Search here" /></header>
+                <div><h3>New Customer</h3></div>
+                <form>
+                    <table id="three">
+                        <tr>
+                            <td>
+                                <lable for="customer type">Customer Type </lable>
+                            </td>
+                            <td>
+                                <input type="radio" name="type" value="business" />Business
+                                <input type="radio" name="type" value="individual" />Individual
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <lable for="contant">Primary Contant</lable>
+                            </td>
+                            <td>
+                                <select name="Salutation">
+                                    <option value="salutation">Salutation</option>
+                                    <option value="company">company</option>
+                                    <option value="library">library</option>
+                                </select>
+                                <input type="text" placeholder="First Name" />
+                                <input type="text" placeholder="Second Name" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <lable for="company">Company name</lable>
+                            </td>
+                            <td>
+                                <input type="text" placeholder="Company Name" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <lable for="customer">Customer display name</lable>
+                            </td>
+                            <td>
+                                <select name="Display name">
+                                    <option value="Display name">Display Name</option>
+                                    <option value="company">company</option>
+                                    <option value="library">library</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <lable for="Email">Customer Email</lable>
+                            </td>
+                            <td>
+                                <input type="email" name="email" placeholder="Email" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <lable for="phone">Customer phone</lable>
+                            </td>
+                            <td>
+                                <input type="text" name="Work Phone" placeholder="Work Phone" />
+                                <input type="number" name="mobile" placeholder="Mobile" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <lable for="Password">Password</lable>
+                            </td>
+                            <td>
+                                <input type="password" name="password" placeholder="Password" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <lable for="website">Website</lable>
+                            </td>
+                            <td>
+                                <input type="url" placeholder="URL" />
+                            </td>
+                        </tr>
+
+                    </table>
+                    <footer>
+                        <button >SAVE</button>
+                        <button>CANCLE</button>
+                    </footer>
+                        
+                </form>
+                
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
